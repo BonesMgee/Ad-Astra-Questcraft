@@ -1,3 +1,9 @@
+
+# Quick Note
+
+- To Launch The Rockets From Within Questcraft Run The Command "/rocket launch"
+- The Landers Will Land Automatically
+
 <a href="https://discord.gg/K6EWQQ7Ntd">
   <p align="center">
       <img src="https://img.shields.io/discord/1005774345316073554?color=blue&logo=Discord?    color=blue&label=Discord&logo=discord&logoColor=ffffff&style=for-the-badge" alt="Discord" width="191"/> 
