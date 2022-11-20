@@ -21,12 +21,12 @@ public class ClientModKeybindings {
 	public static boolean clickingLeft;
 	public static boolean clickingRight;
 
-	private static boolean sentJumpPacket;
-	private static boolean sentSprintPacket;
-	private static boolean sentForwardPacket;
-	private static boolean sentBackPacket;
-	private static boolean sentLeftPacket;
-	private static boolean sentRightPacket;
+	public static boolean sentJumpPacket;
+	public static boolean sentSprintPacket;
+	public static boolean sentForwardPacket;
+	public static boolean sentBackPacket;
+	public static boolean sentLeftPacket;
+	public static boolean sentRightPacket;
 
 	public static void register() {
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
@@ -118,14 +118,14 @@ public class ClientModKeybindings {
 		});
 	}
 
-	private static PacketByteBuf createKeyDownBuf(ModKeyBindings.Key key) {
+	public static PacketByteBuf createKeyDownBuf(ModKeyBindings.Key key) {
 		PacketByteBuf buf = PacketByteBufs.create();
 		buf.writeEnumConstant(key);
 		buf.writeBoolean(true);
 		return buf;
 	}
 
-	private static PacketByteBuf createKeyUpBuf(ModKeyBindings.Key key) {
+	public static PacketByteBuf createKeyUpBuf(ModKeyBindings.Key key) {
 		PacketByteBuf buf = PacketByteBufs.create();
 		buf.writeEnumConstant(key);
 		buf.writeBoolean(false);
